@@ -19,8 +19,6 @@ pipeline {
         buildDiscarder(logRotator(numToKeepStr: '5', daysToKeepStr: '30'))
     }
 
-    
-
     stages {
 
         stage('Git Checkout') {
