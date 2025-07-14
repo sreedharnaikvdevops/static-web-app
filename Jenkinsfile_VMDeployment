@@ -9,16 +9,6 @@ pipeline {
         NGINX_SERVER_PATH ='/usr/share/nginx/html/'
     }
     
-    triggers {
-        githubPush()
-    }
-
-    options {
-        timeout(time: 30, unit: 'MINUTES')
-        disableConcurrentBuilds()
-        buildDiscarder(logRotator(numToKeepStr: '5', daysToKeepStr: '30'))
-    }
-
     stages {
 
         stage('Git Checkout') {
