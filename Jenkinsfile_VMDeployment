@@ -37,4 +37,16 @@ pipeline {
         }
     }
 
+post {
+        always {
+            echo 'Cleaning up...'
+            cleanWs()
+        }
+        success {
+            echo 'Send Success Notification...'
+        }
+        failure {
+            echo 'Send Failure Notification...'
+        }
+    }
 }
