@@ -54,7 +54,7 @@ pipeline {
             echo 'Send Success Notification...'
         }
         failure {
-            echo 'Send Success Notification...'
+            echo 'Send Failure Notification...'
         }
     }
 }
