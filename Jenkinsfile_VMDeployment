@@ -6,7 +6,7 @@ pipeline {
         NGINX_SERVER_SSH_KEY = 'Nginx_Server_SSHKey'
         NGINX_SERVER_IP = "13.203.219.79"
         SSH_USER = 'ec2-user'
-        NGINX_SERVER_PATH = '/usr/share/nginx/html/'
+        NGINX_SERVER_PATH ='/usr/share/nginx/html/'
     }
     
     triggers {
